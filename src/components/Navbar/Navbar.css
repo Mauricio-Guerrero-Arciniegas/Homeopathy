@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
 
 .nav {
+  width: 100vw;
+  top: 0;
   background-color: #293241;
   height: 80px;
   color: white;
+  position: fixed;
 }
 .nav__logo {
   font-size: 1.3em;
