@@ -20,7 +20,7 @@
    padding: 0 1em;
 }
 .inicio__titulo1 {
-    font-size: 1em;
+    font-size: .9em;
     line-height: 1.1em;
 }
 .inicio__titulo2 {
@@ -60,20 +60,21 @@
   .inicio__down {
     position: absolute;
     bottom: 30px;
-    left: 49%;
+    left: 10%;
     transform: translateX(-50%);
     width: 40px;
     height: 40px;
     border: 2px solid orange;
     border-radius: 50%;
     animation: scrollDown 1.5s infinite;
+    z-index: 2;
   }
   
   .inicio__down::after {
     content: '';
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 5%;
     transform: translate(-50%, -50%);
     width: 10px;
     height: 10px;
@@ -81,6 +82,7 @@
     border-bottom: 2px solid #fff;
     transform: rotate(-45deg);
     animation: scrollDown 1.5s infinite;
+    z-index: 2;
   }
   
 
@@ -88,4 +90,8 @@
     .inicio__container {
         flex-direction: column;
     }
+}
+
+@media screen and (max-width: 900px) {
+  
 }
