@@ -4,39 +4,34 @@ import "./Inicio.css";
 const Inicio = () => {
   return (
     <>
-      <h2 className="titulo">Centro Medico Homeopatico</h2>
-      <section>
-        <a
-          href="https://api.whatsapp.com/send?phone=3137675461"
-          className="btn-wsp"
-          target="_blank"
-        >
-          <img
-            className="icon-whatsapp"
-            src="./assets/icons/whatsapp.png"
-            alt=""
-            width="40px"
-            loading="lazy"
-          />
-        </a>
-        <header className="container"></header>
-      </section>
-
-      <section className="contenedor sobre-nosotros" id="about-us">
-        <h2 className="titulo">Especialidad</h2>
-        <div className="contenedor-sobre-nosotros1">
-          <img
-            src="./assets/images/inicio1.jpg"
-            alt=""
-            className="imagen-about-us1"
-            loading="lazy"
-          />
-          <div className="contenido-textos1">
-            <h3 className="contenido-textos1-h3">
-              <span>!</span> Homeopatía.
-            </h3>
-            <p>
-              Es un método terapéutico que utiliza sustancias naturales para
+      <div>
+        <div className="btn-wsp">
+          <a
+            href="https://api.whatsapp.com/send?phone=3137675461"
+            className="btn-wsp"
+            target="_blank"
+          >
+            <img
+              className="icon-whatsapp"
+              src="./assets/icons/whatsapp.png"
+              alt=""
+              width="40px"
+              loading="lazy"
+            />
+          </a>
+        </div>
+      </div>
+      <div className="background__img">
+        <div className="inicio__textos">
+          <h2 className="inicio__titulo1">Centro Medico Homeopatico</h2>
+          <h3 className="inicio__titulo2">Cuidando tu salud con excelencia y dedicacion</h3>
+          <img className="inicio__down" src="./assets/icons/down.svg" alt="" />
+        </div>
+      </div>
+      <div className="inicio__container">
+        <div className="inicio__columna">
+          <img src="./assets/images/inicio1.jpg" alt="" />
+          <p>Es un método terapéutico que utiliza sustancias naturales para
               aliviar los síntomas. Deriva de las palabras griegas homeo, que
               significa "similar", y pathos, que significa "sufrimiento" (como
               la patología de una enfermedad). La homeopatía opera según el
@@ -48,18 +43,11 @@ const Inicio = () => {
               similares en una persona sana. Se dice que los medicamentos
               homeopáticos estimulan las reacciones fisiológicas del cuerpo que
               restauran la salud. Esto se logra con un riesgo muy bajo de
-              efectos secundarios debido al uso de microdosis.
-            </p>
-          </div>
+              efectos secundarios debido al uso de microdosis.</p>
         </div>
-
-        <div className="contenedor-sobre-nosotros2">
-          <div className="contenido-textos2">
-            <h3 className="contenido-textos2-h3">
-              <span>!</span> Beneficios de la Homeopatía.
-            </h3>
-            <p>
-              Una elección natural. Los ingredientes activos de los medicamentos
+        <div className="inicio__columna">
+          <img src="./assets/images/inicio2.jpg" alt="" />
+          <p>Una elección natural. Los ingredientes activos de los medicamentos
               homeopáticos están hechos de extractos diluidos de plantas,
               animales, minerales u otras sustancias crudas que se encuentran en
               la naturaleza. Para uso diario. Al igual que otros medicamentos de
@@ -80,17 +68,9 @@ const Inicio = () => {
               de los Estados Unidos (HPUS). Más opciones y preferencias. Los
               medicamentos homeopáticos están disponibles en una variedad de
               formas de dosificación, como geles, ungüentos, cremas, jarabes,
-              gotas para los ojos, tabletas y supositorios.
-            </p>
-          </div>
-          <img
-            src="./assets/images/inicio2.jpg"
-            alt=""
-            className="imagen-about-us2"
-            loading="lazy"
-          />
+              gotas para los ojos, tabletas y supositorios.</p>
         </div>
-      </section>
+      </div>
     </>
   );
 };
