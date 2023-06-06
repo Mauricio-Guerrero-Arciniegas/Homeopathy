@@ -11,8 +11,26 @@ const Navbar = () => {
 
   return (
     <nav className="nav">
+      <div className="btn-wsp">
+          
+        </div>
       <div className="nav__container">
-        <h1 className="nav__logo">Dr. Mauricio Guerrero R.</h1>
+        
+        <h1 className="nav__logo">
+        <a
+            href="https://api.whatsapp.com/send?phone=3137675461"
+            className="btn-wsp"
+            target="_blank"
+          >
+            <img
+              className="btn-wsp"
+              src="./assets/icons/whatsapp.png"
+              alt=""
+              loading="lazy"
+            />
+          </a>
+          Dr. Mauricio Guerrero R.
+          </h1>
 
         <label htmlFor="menu" className="nav__label">
           <img src="/assets/icons/menu.svg" alt="" className="nav__img" />

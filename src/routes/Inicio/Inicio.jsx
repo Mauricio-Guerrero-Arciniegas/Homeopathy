@@ -4,27 +4,12 @@ import "./Inicio.css";
 const Inicio = () => {
   return (
     <>
-      <div>
-        <div className="btn-wsp">
-          <a
-            href="https://api.whatsapp.com/send?phone=3137675461"
-            className="btn-wsp"
-            target="_blank"
-          >
-            <img
-              className="icon-whatsapp"
-              src="./assets/icons/whatsapp.png"
-              alt=""
-              width="40px"
-              loading="lazy"
-            />
-          </a>
-        </div>
-      </div>
+      
       <div className="background__img">
         <div className="inicio__textos">
           <h2 className="inicio__titulo1">Centro Medico Homeopatico</h2>
           <h3 className="inicio__titulo2">Cuidando tu salud con excelencia y dedicacion</h3>
+         
           <img className="inicio__down" src="./assets/icons/down.svg" alt="" />
         </div>
       </div>

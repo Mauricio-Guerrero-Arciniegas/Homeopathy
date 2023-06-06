@@ -1,13 +1,6 @@
 
 
-.btn-wsp {
-    width: 3em;
-    position: fixed;
-    bottom: 76%;
-    right: 4%;
-    border-radius: 50%;
-    height: 5em;
-}
+
 .background__img {
     display: flex;
     width: 100%;
@@ -66,7 +59,7 @@
   
   .inicio__down {
     position: absolute;
-    bottom: 80px;
+    bottom: 30px;
     left: 49%;
     transform: translateX(-50%);
     width: 40px;
