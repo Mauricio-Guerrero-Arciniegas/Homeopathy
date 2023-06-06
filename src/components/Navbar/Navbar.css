@@ -2,11 +2,7 @@
 
 .btn-wsp {
   width: 2.5em;
-  position: fixed;
-  bottom: 92.5%;
-  right: 90%;
   border-radius: 50%;
-  height: 2.5em;
 }
 .nav {
   width: 100vw;
@@ -15,11 +11,15 @@
   height: 80px;
   color: white;
   position: fixed;
-  padding: 0 2em;
 }
 .nav__logo {
+  display: flex;
+  flex-flow: row;
   font-size: 1em;
   font-weight: 400;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1em;
 }
 .nav__container {
   display: flex;
@@ -81,25 +81,5 @@ display: none;
   }
   .nav__input:checked + .nav__menu {
     clip-path: circle(100% at center);
-  }
-}
-@media screen and (max-width: 600px) {
-  .btn-wsp {
-    width: 2.5em;
-    position: fixed;
-    bottom: 92.5%;
-    right: 87%;
-    border-radius: 50%;
-    height: 2.5em;
-  }
-}
-@media screen and (max-width: 400px) {
-  .btn-wsp {
-    width: 2.5em;
-    position: fixed;
-    bottom: 92.5%;
-    right: 85%;
-    border-radius: 50%;
-    height: 2.5em;
   }
 }
