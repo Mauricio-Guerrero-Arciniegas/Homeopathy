@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+
+* {
+  font-family: 'Playfair Display', serif;;
+}
+
 .contenedor-enfermedades {
     display: flex;
     flex-flow: column;
@@ -5,9 +11,11 @@
     padding: 20px;
   }
   
-  .titulo {
+  .enfermedades__titulo {
     text-align: center;
     margin-top: 6em;
+    color: brown;
+    font-size: 2em;
   }
   
   .contenedor-botones {

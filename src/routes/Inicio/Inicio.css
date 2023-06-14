@@ -1,97 +1,155 @@
-
-
-
 .background__img {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    background-color: #000;
-    background-image: url('https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80');
-    background-size: cover;
-    background-position: center;
-    justify-content: center;
-    align-items: center;
-}
-.inicio__textos {
-   margin-top: 25%;
-  text-align: center;
-   color: white;
-   font-size: 2em;
-   padding: 0 1em;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: url(/assets/images/background.JPG);
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
 }
 .inicio__titulo1 {
-    font-size: .9em;
-    line-height: 1.1em;
+  display: flex;
+  color: white;
+  margin-bottom: .5em;
+  line-height: 1em;
+  cursor: pointer;
+  touch-action: manipulation;
 }
 .inicio__titulo2 {
-    margin-top: 10px;
-    font-size: .5em;
+  color: white;
+  font-size: .5em;
 }
+.inicio__info {
+  width: 1.5em;
+  margin-top: .5em;
+  margin-left: 48%;
+}
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__content {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 500px;
+  max-height: 80vh;
+  overflow-y: auto;
+  margin: 1em;
+}
+.modal__p {
+  font-size: 1.2em;
+  text-align: center;
+}
+.modal__button {
+  background-color: brown;
+  color: white;
+  border-radius: 5px;
+  padding: .2em .6em;
+  margin-top: 1em;
+  border: none;
+  cursor: pointer;
+}
+
+.inicio__textos {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 12em;
+  text-align: center;
+  font-size: 2em;
+  padding: 0 1em;
+}
+
 
 .inicio__container {
-    width: 100%;
-    background-color: orange;
+  width: 100%;
+  background-color: #c7d8d9;
 
-    display: flex;
-    flex-flow: row wrap;
+  display: flex;
+  flex-flow: column wrap;
 }
 .inicio__columna {
-    flex-basis: calc(50% - 2em);
-    background-color: aqua;
-    margin: 1em;
+  display: flex;
+  flex-flow: row;
+  flex-basis: calc(50% - 2em);
+  background-color: #c7d8d9;
+  color: rgb(75, 68, 55);
 }
-.inicio__columna .img {
-    min-height: 5em;
-    background-color: crimson;
+.inicio__img {
+  width: 40em;
+  height: 20em;
+  padding: 1em;
+  min-height: 5em;
+  border-radius: 50px;
+  background-size: cover;
+}
+.inicio__text {
+  padding: 1em;
+  font-size: 1.1em;
 }
 
 @keyframes scrollDown {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(12px);
-    }
-    100% {
-      transform: translateY(0);
-    }
+  0% {
+    transform: translateY(0);
   }
-  
-  .inicio__down {
-    position: absolute;
-    bottom: 30px;
-    left: 10%;
-    transform: translateX(-50%);
-    width: 40px;
-    height: 40px;
-    border: 2px solid orange;
-    border-radius: 50%;
-    animation: scrollDown 1.5s infinite;
-    z-index: 2;
+  50% {
+    transform: translateY(12px);
   }
-  
-  .inicio__down::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    transform: translate(-50%, -50%);
-    width: 10px;
-    height: 10px;
-    border-left: 2px solid #fff;
-    border-bottom: 2px solid #fff;
-    transform: rotate(-45deg);
-    animation: scrollDown 1.5s infinite;
-    z-index: 2;
+  100% {
+    transform: translateY(0);
   }
-  
+}
+
+.inicio__down {
+  position: absolute;
+  bottom: 30px;
+  left: 10%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  border: 2px solid orange;
+  border-radius: 50%;
+  animation: scrollDown 1.5s infinite;
+  z-index: 2;
+}
+
+.inicio__down::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(-45deg);
+  animation: scrollDown 1.5s infinite;
+  z-index: 2;
+}
 
 @media screen and (max-width: 1500px) {
-    .inicio__container {
-        flex-direction: column;
-    }
+  .inicio__container {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 900px) {
-  
+  .inicio__columna {
+    flex-flow: column;
+  }
+  .inicio__info {
+    width: 1em;
+    margin-left: 48%;
+  }
 }
