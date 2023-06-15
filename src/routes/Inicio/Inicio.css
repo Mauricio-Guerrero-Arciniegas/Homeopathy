@@ -184,13 +184,14 @@
 
 @media screen and (max-width: 585px) {
   .inicio__columna {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .inicio__textos {
     display: flex;
-    flex-direction: row;
+    flex-flow: column;
     margin-top: -12em;
     font-size: 1.5em;
     padding: 0 1em;
@@ -200,6 +201,9 @@
   }
   .inicio__info {
     width: 1.5em;
-    margin-bottom: 1em;
+    margin: 0;
+  }
+  .info {
+    margin: 0;
   }
 }

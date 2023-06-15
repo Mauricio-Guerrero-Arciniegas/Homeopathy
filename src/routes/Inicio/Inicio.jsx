@@ -44,7 +44,7 @@ const Inicio = () => {
           <div className="inicio__titulo">
             <h2 onClick={openModal}>Instituto de medicina Integrativa </h2>
           </div>
-          <div>
+          <div className="info">
             <img
               className="inicio__info"
               src="./assets/icons/info.svg"
