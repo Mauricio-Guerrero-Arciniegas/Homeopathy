@@ -62,7 +62,7 @@ background: linear-gradient(180deg, rgba(41,50,65,1) 80%, rgba(0,172,177,0) 100%
 display: none;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1209px) {
   .nav__label {
     display: block;
     cursor: pointer;
